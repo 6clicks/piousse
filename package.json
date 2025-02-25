@@ -1,0 +1,34 @@
+{
+    "name": "sixclicks",
+    "version": "1.0.0",
+    "description": " 6clicks starter theme ",
+    "main": "gulpfile.js",
+    "dependencies": {},
+    "devDependencies": {
+        "autoprefixer": "^9.6.1",
+        "gulp": "^3.9.0",
+        "gulp-autoprefixer": "^6.1.0",
+        "gulp-livereload": "^4.0.1",
+        "gulp-load-plugins": "^1.5.0",
+        "gulp-notify": "^3.2.0",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "^1.4.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-size": "*",
+        "gulp-svg-sprite": "^1.5.0",
+        "gulp-svg2png": "*",
+        "gulp-uglify": "^3.0.2",
+        "gulp-util": "*",
+        "gulp-watch": "^5.0.1",
+        "vinyl-ftp": "^0.6.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "author": "",
+    "license": "ISC"
+}

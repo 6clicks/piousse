@@ -1,0 +1,182 @@
+/******************************************************************
+Site Name: piguet
+Author: john robert-nicoud
+
+Stylesheet: Menu
+
+If you want to use these alerts in your design, you can. If not,
+you can just remove this stylesheet.
+
+******************************************************************/
+
+
+.no-js .menu-toggle {
+display: none;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 100%;
+		display: none;
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: $overlay-color; /*  fallback color */
+    background-color: $overlay-color-trans; /*opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+  //  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+		@include bounceInUp();
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+		left: 10%;
+    top: 10%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    //text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: $overlay-link-color;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: $overlay-link-hover;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/* BURGER ANIMATED ICON */
+
+/* Icon 1 */
+
+.c-hamburger {
+width: 50px;
+height: 25px;
+position: absolute;
+right: 50px;
+top: 60px;
+padding: 20px 20px;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+z-index: 99;
+span {
+	display: block;
+	position: absolute;
+	height: 6px;
+	width: 100%;
+	background: $link-color;
+	border-radius: 6px;
+	opacity: 1;
+	left: 0;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .25s ease-in-out;
+	-moz-transition: .25s ease-in-out;
+	-o-transition: .25s ease-in-out;
+	transition: .25s ease-in-out;
+}
+
+}
+
+
+
+/* Icon 3 */
+
+.c-hamburger span:nth-child(1) {
+top: 0px;
+}
+
+.c-hamburger span:nth-child(2),.c-hamburger span:nth-child(3) {
+top: 18px;
+}
+
+.c-hamburger span:nth-child(4) {
+top: 36px;
+}
+
+.c-hamburger.open span:nth-child(1) {
+top: 18px;
+width: 0%;
+left: 50%;
+}
+
+.c-hamburger.open span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+.c-hamburger.open span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+
+.c-hamburger.open span:nth-child(4) {
+top: 18px;
+width: 0%;
+left: 50%;
+}
+
+.txt-menu-res{
+  position: absolute;
+  width: 60px;
+  left: 1px;
+  font-size: 1.6em;
+  top: 16px;
+  font-family:$title;
+   color: $gray;}
+
+@media only screen and (min-width: 48em) {
+
+  .txt-menu-res{
+    position: absolute;
+    width: 60px;
+    left: 1px;
+    font-size: 1.6em;
+    top: 16px;
+    font-family:$title;
+     color: $gray;}
+
+}

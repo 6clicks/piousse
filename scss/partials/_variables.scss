@@ -1,0 +1,97 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Variables
+
+Here is where we declare all our variables like colors, fonts,
+base values, and defaults. We want to make sure this file ONLY
+contains variables that way our files don't get all messy.
+No one likes a mess.
+
+******************************************************************/
+
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+
+$main-color: #34213B;
+$accent-color: #FFA439;
+
+$alert-yellow: #ebe16f;
+$alert-red: #fbe3e4;
+$alert-green: #e6efc2;
+$alert-blue: #d5edf8;
+
+$black: #323944;
+$white: #fff;
+
+$light-gray: #f8f9fa;
+$gray: #6c6c6a;
+$text-color: $gray;
+$meta-gray: #9fa6b4;
+
+$tan: #eceee5;
+
+$purple: #604d8e;
+$flash-purple: #5847a0;
+$light-purple: #bbafe2;
+$dark-purple: #2b2251;
+
+$green: #abb406;
+$flash-green: #c4ce0f;
+$light-green: #f9fae8;
+$dark-green: #7d8323;
+
+$blue: $main-color;
+$flash-blue: #48d0ff;
+$light-blue: #c0efff;
+$dark-blue: $accent-color;
+
+/* Variation COLOR lighten :/*/
+$light-gray: lighten($gray, 10%);
+$light-gray-1: lighten($gray, 20%);
+$light-gray-2: lighten($gray, 30%);
+
+/* Variation COLOR Transparent :/*/
+$white-trans: rgba($white, 0.8);
+$white-trans-1: rgba($white, 0.5);
+$white-trans-2: rgba($white, 0.3);
+
+$link-color: $blue;
+$link-hover: darken($link-color, 9%);
+
+$border-color: $gray;
+$disabled-gray: $light-gray-2;
+
+$main: $gray;
+$main-1: $black;
+$main-2: $blue;
+$text-color: $black;
+$text-color-1: $gray;
+
+/* button  COLOR :/*/
+$button-txt-color: $link-color;
+$button-txt-color-hover: $link-hover;
+$button-bg-color-1: $gray;
+$button-txt-color-1: $black;
+$button-txt-color-hover-1: $white;
+
+/* border COLOR :/*/
+$border-color: $light-gray;
+$disabled-gray: $light-gray-2;
+$meta-gray: $light-gray-1;
+
+/* Menu full screen COLOR :/*/
+$burger-color: $blue;
+$overlay-color: $gray;
+$overlay-color-trans: rgba($link-hover, 0.9);
+$overlay-link-color: $white;
+$overlay-link-hover: $link-hover;
+
+/* tooltip COLOR :/*/
+$tooltip-bg: $light-gray;
+$tooltip-txt: $light-gray-2;
+$tooltip-border: $tooltip-bg;
